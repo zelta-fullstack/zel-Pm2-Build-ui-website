@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
       <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -11,10 +12,10 @@
 </head>
 <body>
     <!-- header -->
-    <header>
+    <header class="navbar">
         <nav>
             <!-- nav kiri -->
-            <div>
+            <div class="nav-kiri">
                 <div>ZelWatch</div>
                 <div>
                     <a href="">trending</a>
@@ -38,18 +39,21 @@
 
         <!-- hero  -->
         <div class="hero-background">
-            <div>
-                <p>
-                    <i class="fa-solid fa-star"></i> 5,4
-                </p>
-                <p>Sci-fi thiller</p>
-                <p>2h 45m</p>
-            </div>
-            <h1>ANJAS MARA</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure amet error. Tempore cupiditate quo doloremque qui sint accusantium iure asperiores consequuntur in impedit nulla laudantium, aspernatur eaque, quisquam est!</p>
-            <div>
-                <button>watch trailer</button>
-                <button>add to list</button>
+            <div class="konten-hero">
+                <div class="konten-hero1">
+                    <p>
+                        <i class="fa-solid fa-star"></i> 5,4
+                    </p>
+                    <p>Sci-fi thiller</p>
+                    <p>2h 45m</p>
+                </div>
+                <h1>ANJAS MARA</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure amet error. Tempore cupiditate quo doloremque qui sint accusantium iure asperiores consequuntur in impedit nulla laudantium, aspernatur eaque, quisquam est!</p>
+                <div>
+                    <button>watch trailer</button>
+                    <button>add to list</button>
+                </div>
+
             </div>
         </div>
 
@@ -58,7 +62,49 @@
         <!-- card film trending -->
         <section class="card-film">
             <div class="card-f">
-                <img src="" alt="">
+                <img src="assets/kucing.jpg" alt="gambar kucing kece w">
+                <div>
+                    <h3>judul</h3>
+                    <p>genre tahun rilis</p>
+                </div>
+            </div>
+            <div class="card-f">
+                <img src="assets/kucing.jpg" alt="gambar kucing kece w">
+                <div>
+                    <h3>judul</h3>
+                    <p>genre tahun rilis</p>
+                </div>
+            </div>
+            <div class="card-f">
+                <img src="assets/kucing.jpg" alt="gambar kucing kece w">
+                <div>
+                    <h3>judul</h3>
+                    <p>genre tahun rilis</p>
+                </div>
+            </div>
+            <div class="card-f">
+                <img src="assets/kucing.jpg" alt="gambar kucing kece w">
+                <div>
+                    <h3>judul</h3>
+                    <p>genre tahun rilis</p>
+                </div>
+            </div>
+            <div class="card-f">
+                <img src="assets/kucing.jpg" alt="gambar kucing kece w">
+                <div>
+                    <h3>judul</h3>
+                    <p>genre tahun rilis</p>
+                </div>
+            </div>
+            <div class="card-f">
+                <img src="assets/kucing.jpg" alt="gambar kucing kece w">
+                <div>
+                    <h3>judul</h3>
+                    <p>genre tahun rilis</p>
+                </div>
+            </div>
+            <div class="card-f">
+                <img src="assets/kucing.jpg" alt="gambar kucing kece w">
                 <div>
                     <h3>judul</h3>
                     <p>genre tahun rilis</p>
@@ -88,25 +134,25 @@
     </main>
     <!-- footer -->
     <footer>
-        <div>
-            <div>
-                <h1>ZelWatch</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium error ut modi architecto? Distinctio voluptatum amet recusandae mollitia nobis omnis, odio, aspernatur inventore beatae voluptatem quo excepturi odit eos maxime?</p>
+        <div class="footer-1">
+            <div class="footer-kiri1">
+                <h3>ZelWatch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium error ut modi architecto? Distinctio</p>
                 <div class="icon-sosial">
-                    <i></i>
-                    <i></i>
-                    <i></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-solid fa-envelope"></i>
                 </div>
             </div>
 
-            <div>
+            <div class="footer-kiri2">
                 <h5>platform</h5>
                 <li>Movie</li>
                 <li>TV show</li>
                 <li>Award Winners</li>
             </div>
             
-            <div>
+            <div class="footer-kanan1">
 
                 <h5>legal</h5>
                 <li>Privacy policy</li>
@@ -114,8 +160,8 @@
                 <li>help Center</li>
             </div>
 
-            <div>
-                <h5>suscribe</h5>
+            <div class="footer-kanan2">
+                <h6>suscribe</h6>
                 <p>Get the lates cinema updates</p>
                 <div>
                     <input type="email" name="" placeholder="Email address" id="">

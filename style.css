@@ -1,0 +1,124 @@
+body{
+    /* background-size: cover; */
+    height: 100vh;
+    /* width: 100; */
+    padding: 0;
+    margin: 0;
+    background-image: url("assets/kucing.jpg");
+    background-repeat: no-repeat;
+}
+.navbar{
+    
+    height: 100px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    
+    backdrop-filter: blur(10px);
+}
+.navbar nav{
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-kiri{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+main{
+    padding: 0 100px;
+}
+
+.hero-background {
+    /* margin: 0 30px; */
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    /* background-image: url("assets/kucing.jpg"); */
+}
+
+.konten-hero{
+    margin-top: 450px;
+    width: 50%;
+    height: 300px;
+    gap: 640px;
+}
+.konten-hero1{
+    display: flex;
+}
+h3{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+footer{
+    padding: 0 100px;
+    
+}
+.footer-1{
+    
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card-film{
+    margin-top: 30px ;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 450px;
+    overflow-x:scroll
+    
+}
+.card-film::-webkit-scrollbar {
+    display: none;
+}
+.card-f{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.card-f img {
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+    /* object-fit: cover; */
+    
+}
+
+.footer-kiri1{
+    margin-top: 20px;
+    /* width:25% ; */
+    /* width: auto; */
+    width: 250px;
+}
+.footer-kiri2{
+    /* width:25% ; */
+    width: auto;
+}
+.footer-kanan1{
+    /* width:25% ; */
+    width: auto;
+}
+.footer-kanan{
+    width: auto;
+    /* width:25% ; */
+}
+
+.icon-sosial{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
