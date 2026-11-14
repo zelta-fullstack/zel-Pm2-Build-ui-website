@@ -1,129 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-      <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZelWatch</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header -->
     <header>
-        <nav>
-            <!-- nav kiri -->
-            <div>
-                <div>ZelWatch</div>
-                <div>
-                    <a href="">trending</a>
-                    <a href="">New releases</a>
-                    <a href="">genre</a>
-                    <!-- <a href="">watchlist</a> -->
-                    
-                </div>
-            </div>
-            <!-- nav kanan -->
-            <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" name="" id="">
-                <button>suscribe</button>
-                <i class="fa-solid fa-bell"></i>
-                <img src="" alt="foto ganteng">
-            </div>
-        </nav>
+      <nav>
+        <!-- nav kiri -->
+        <div class="nav-kiri">
+          <h1>CINEPLEX</h1>
+          <div class="nav-link-kiri">
+            <a href="#Trending">Trending</a>
+            <a href="#Genre">Genre</a>
+            <a href="#New-releases">New Releases</a>
+          </div>
+        </div>
+        <!-- nav kanan -->
+        <div class="nav-kanan">
+          <i class="kaca fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="" id="" placeholder="Search Movie..." />
+          <button>SUSCRIBE</button>
+          <i class="fa-regular fa-bell cl-putih"></i>
+          <img src="assets/baru2.jpg" alt="foto ganteng" />
+        </div>
+      </nav>
+      <div class="main-header">
+        <div class="main-header1">
+          <p class="main-p1"><i class="fa-solid fa-star"></i> 9.2</p>
+          <p class="main-p2 bg-trns">Sci-Fi Thiller</p>
+          <p class="main-p3 bg-trns">2h 45m</p>
+        </div>
+        <h1>NEON GENESIS</h1>
+        <p class="main-p4">
+          In a world where memories can be traded as currency, a rogue detective
+          uncovers a conspiracy that threatens to erase the history of humanity.
+          Experience the visual masterpiece of the decade.
+        </p>
+        <div class="main-header-bottom">
+          <button class="main-header-btn-kiri">WATCH TRAILER</button>
+          <button class="main-header-btn-kanan">ADD TO LIST</button>
+        </div>
+      </div>
     </header>
     <main>
-
-        <!-- hero  -->
-        <div class="hero-background">
-            <div>
-                <p>
-                    <i class="fa-solid fa-star"></i> 5,4
-                </p>
-                <p>Sci-fi thiller</p>
-                <p>2h 45m</p>
-            </div>
-            <h1>ANJAS MARA</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure amet error. Tempore cupiditate quo doloremque qui sint accusantium iure asperiores consequuntur in impedit nulla laudantium, aspernatur eaque, quisquam est!</p>
-            <div>
-                <button>watch trailer</button>
-                <button>add to list</button>
-            </div>
+      <div class="perSC" id="Trending">
+        <div class="judul-section">
+          <h1 class="section-title">TRENDING NOW</h1>
+          <div class="bw-jd-sc">
+            <p class="garis-bawah"></p>
+            <p style="font-size: 10px">VIEW ALL</p>
+          </div>
         </div>
-
-
-
         <!-- card film trending -->
         <section class="card-film">
-            <div class="card-f">
-                <img src="" alt="">
-                <div>
-                    <h3>judul</h3>
-                    <p>genre tahun rilis</p>
-                </div>
+          <div class="card-f">
+            <img src="assets/rekomen1.jpg" alt="" />
+            <div class="des-card">
+              <h3>THE SILENT VOID</h3>
+              <p class="movie-info">Drama • 2024</p>
             </div>
+          </div>
+          <div class="card-f">
+            <img src="assets/rekomen2.jpg" alt="" />
+            <div class="des-card">
+              <h3>STARGAZER</h3>
+              <p class="movie-info">Adventure • 2024</p>
+            </div>
+          </div>
+          <div class="card-f">
+            <img src="assets/rekomen3.jpg" alt="" />
+            <div class="des-card">
+              <h3>NIGHT RECKONING</h3>
+              <p class="movie-info">Action • 2024</p>
+            </div>
+          </div>
+          <div class="card-f">
+            <img src="assets/rekomen4.jpg" alt="" />
+            <div class="des-card">
+              <h3>THE LAST CHAPTER</h3>
+              <p class="movie-info">Mystery • 2023</p>
+            </div>
+          </div>
+          <div class="card-f">
+            <img src="assets/rekomen5.jpg" alt="" />
+            <div class="des-card">
+              <h3>FROZEN KINGDOM</h3>
+              <p class="movie-info">Fantasy • 2024</p>
+            </div>
+          </div>
         </section>
-        <!-- card genre -->
+      </div>
+      <!-- hero  -->
+      <!-- card genre -->
+      <div class="perSC" id="Genre">
+        <div class="judul-section">
+          <h1 class="section-title">BROWSE GENRES</h1>
+        </div>
+
         <section class="card-genre">
-            <div class="card-g">
-                <img src="" alt="">
-                <div>
-                    <h3>judul</h3>
-                    <p>genre tahun rilis</p>
-                </div>
+          <div class="card-g card-g1">
+            <img src="assets/genre1.jpg" alt="" />
+            <div class="mask"></div>
+            <div class="des-genre">
+              <i class="fa-solid i fa-sun"></i>
+              <h4 class="h4">ACTION</h4>
             </div>
+          </div>
+          <div class="card-g card-g2">
+            <img src="assets/genre2.jpg" alt="" />
+            <div class="mask"></div>
+            <div class="des-genre">
+              <i class="fa-solid i fa-skull"></i>
+              <h4 class="h4">HORROR</h4>
+            </div>
+          </div>
+          <div class="card-g card-g3">
+            <img src="assets/genre4.jpg" alt="" />
+            <div class="mask"></div>
+            <div class="des-genre">
+              <i class="fa-solid i fa-rocket"></i>
+              <h4 class="h4">SCI-FI</h4>
+            </div>
+          </div>
+          <div class="card-g card-g4">
+            <img src="assets/genre3.jpg" alt="" />
+            <div class="mask"></div>
+            <div class="des-genre">
+              <i class="fa-solid i fa-masks-theater"></i>
+              <h4 class="h4">DRAMA</h4>
+            </div>
+          </div>
         </section>
-        <!-- card film new -->
+      </div>
+      <!-- card film new -->
+      <div class="perSC" id="New-releases">
+        <div class="judul-section-f">
+          <h1 class="section-title">NEW RELEASES</h1>
+          <div class="emak-new-btn">
+            <div class="new-btn"><</div>
+            <div class="new-btn">></div>
+          </div>
+        </div>
         <section class="card-film-new">
-            <div class="card-f">
-                <img src="" alt="">
-                <div>
-                    <h3>judul</h3>
-                    <p>genre tahun rilis</p>
+          <div class="card-fnew">
+            <img src="assets/baru1.jpg" alt="" />
+            <div>
+              <div class="des-card-new">
+                <h3>ECLIPSE</h3>
+                <div style="font-family: &quot;Space Grotesk&quot;, sans-serif">
+                  <span class="movie-info" style="color: #e9bcb6">Thriller</span>
+                  <span style="color: #5e3f3b">•</span>
+                  <span class="movie-info" style="color: #ffdb3c">8.5</span>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="card-fnew">
+            <img src="assets/baru3.jpg" alt="" />
+            <div>
+              <div class="des-card-new">
+                <h3>ABYSSAL</h3>
+                <div style="font-family: &quot;Space Grotesk&quot;, sans-serif">
+                  <span class="movie-info" style="color: #e9bcb6">Sci-Fi</span>
+                  <span style="color: #5e3f3b">•</span>
+                  <span class="movie-info" style="color: #ffdb3c">7.9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-fnew">
+            <img src="assets/baru5.jpg" alt="" />
+            <div>
+              <div class="des-card-new">
+                <h3>SYNDICATE</h3>
+                <div style="font-family: &quot;Space Grotesk&quot;, sans-serif">
+                  <span class="movie-info" style="color: #e9bcb6">Crime</span>
+                  <span style="color: #5e3f3b">•</span>
+                  <span class="movie-info" style="color: #ffdb3c">8.1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-fnew">
+            <img src="assets/baru4.jpg" alt="" />
+            <div>
+              <div class="des-card-new">
+                <h3>ETERNAL SUN</h3>
+                <div style="font-family: &quot;Space Grotesk&quot;, sans-serif">
+                  <span class="movie-info" style="color: #e9bcb6">Romance</span>
+                  <span style="color: #5e3f3b">•</span>
+                  <span class="movie-info" style="color: #ffdb3c">9.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-fnew">
+            <img src="assets/baru2.jpg" alt="" />
+            <div>
+              <div class="des-card-new">
+                <h3>VELOCITY</h3>
+                <div style="font-family: &quot;Space Grotesk&quot;, sans-serif">
+                  <span class="movie-info" style="color: #e9bcb6">Sports</span>
+                  <span style="color: #5e3f3b">•</span>
+                  <span class="movie-info" style="color: #ffdb3c">7.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-fnew">
+            <img src="assets/baru6.jpg" alt="" />
+            <div>
+              <div class="des-card-new">
+                <h3>THE ATTIC</h3>
+                <div style="font-family: &quot;Space Grotesk&quot;, sans-serif">
+                  <span class="movie-info" style="color: #e9bcb6">Horror</span>
+                  <span style="color: #5e3f3b">•</span>
+                  <span class="movie-info" style="color: #ffdb3c">6.8</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+      </div>
     </main>
     <!-- footer -->
     <footer>
-        <div>
-            <div>
-                <h1>ZelWatch</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium error ut modi architecto? Distinctio voluptatum amet recusandae mollitia nobis omnis, odio, aspernatur inventore beatae voluptatem quo excepturi odit eos maxime?</p>
-                <div class="icon-sosial">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-            </div>
+      <div class="d-footer">
+        <div class="f1">
+          <h1>CINEPLEX</h1>
+          <p>
+            Redefining the cinematic <br> experience for the digital age. <br> Immerse
+            yourself in the best of <br> global cinema.
+          </p>
+          <div class="icon-sosial">
+            <i class="fa-solid fa-earth-americas"></i>
 
-            <div>
-                <h5>platform</h5>
-                <li>Movie</li>
-                <li>TV show</li>
-                <li>Award Winners</li>
-            </div>
-            
-            <div>
+            <i class="fa-brands fa-youtube"></i>
 
-                <h5>legal</h5>
-                <li>Privacy policy</li>
-                <li>Trerms of service</li>
-                <li>help Center</li>
-            </div>
-
-            <div>
-                <h5>suscribe</h5>
-                <p>Get the lates cinema updates</p>
-                <div>
-                    <input type="email" name="" placeholder="Email address" id="">
-                    <button>join</button>
-
-                </div>
-            </div>
+            <i class="fa-solid fa-at"></i>
+          </div>
         </div>
+
+        <div class="f2"> 
+          <h5 class="movie-info">PLATFORM</h5 >
+          <li>Movie</li>
+          <li>TV show</li>
+          <li>Award Winners</li>
+        </div>
+
+        <div class="f3">
+          <h5 class="movie-info">LEGAL</h5 >
+          <li>Privacy policy</li>
+          <li>Trerms of service</li>
+          <li>help Center</li>
+        </div>
+
+        <div class="f4">
+          <h5 class="movie-info">SUSCRIBE</h5>
+          <p>Get the lates cinema updates.</p>
+          <div class="call">
+            <input type="email" name="" placeholder="Email address" id="" />
+            <button>join</button>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+      <div class="under-footer">
+        <div>© 2024 CINEPLEX. ALL RIGHTS RESERVED.</div>
+        <div>
+          <i class="fa-solid fa-credit-card"></i>
+          <i class="fa-solid fa-wallet"></i>
+        </div>
+      </div>
+  </body>
 </html>
