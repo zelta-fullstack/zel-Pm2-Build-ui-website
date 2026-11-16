@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#121414] text-[#E2E2E2]">
+    <style type="text/tailwindcss">
+      @theme {
+        --font-1: "Bebas Neue", sans-serif;
+        --font-2: "Space Grotesk", sans-serif;
+        --font-3: "Inter", sans-serif;
+      }
+
+      .f1 {
+        @apply font-1 font-[400];
+      }
+      .f1-md {
+        @apply font-1 font-[700];
+      }
+      .f2 {
+        @apply font-2 font-[700] text-[#FFB4AA];
+      }
+      .f3 {
+        @apply font-3 font-[400];
+      }
+      .f3-md {
+        @apply font-3 font-[700];
+      }
+      .f3-pnk {
+        @apply font-3 font-[400] text-[#FFB4AA];
+      }
+      .f3-md-pnk {
+        @apply font-3 font-[700] text-[#FFB4AA];
+      }
+      .btn-nav-kanan {
+        @apply bg-[#333535] w-[40px] h-[40px] text-center flex items-center justify-center rounded-[12px];
+      }
+      .btn-merah {
+        @apply flex items-center text-center justify-center bg-[#E50914];
+      }
+      .mnt-img {
+        @apply text-[10px] absolute right-[7.99px] bg-[#000000CC] h-[19px] w-[37px] text-center flex justify-center items-center bottom-[8px];
+      }
+    </style>
+  
+    <nav
+      class="border-b-1 border-[#5E3F3B] flex justify-between items-center bg-[#121414CC] text-white px-[40px] py-[12px]"
+    >
+      <div class="flex gap-[16px] items-center justify-center text-center">
+        <img class="w-[24px] h-[24px]" src="assstsT/SVG.svg" alt="" />
+        <h1 class="f1 text-[25px]">MOVIESTREAM</h1>
+      </div>
+      <div class="flex gap-[32px] justify-center items-center">
+        <div class="relative">
+          <i
+            class="absolute left-4 bottom-3 text-[#E9BCB6] fa-solid fa-magnifying-glass"
+          ></i>
+          <input
+            class="f3 bg-[#333535] h-10 w-[220px] rounded-xs pl-[40px] placeholder:text-[#E9BCB6]"
+            type="search"
+            placeholder="Search movies, actors..."
+            name=""
+            id=""
+          />
+        </div>
+        <div class="flex gap-[16px]">
+          <div class="btn-nav-kanan"><i class="fa-regular fa-bookmark"></i></div>
+          <div class="btn-nav-kanan"><i class="fa-regular fa-user"></i></div>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="relative bg-[url(assstsT/bg.jpg)] bg-auto bg-size-[500px] h-[75vh]"
+    >
+      <div
+        class="absolute inset-0 bg-linear-to-b from-[#12141400] via-[#121414CC] to-[#121414]"
+      ></div>
+      <!-- /card header -->
+
+      <div
+        class="flex justify-start flex-col absolute bottom-[0px] py-[40px] h-[345px] gap-[16px] left-[40px]"
+      >
+        <div class="flex justify-start items-center text-center gap-[12px]">
+          <div class="btn-merah f3 w-[139px] h-[25px] rounded-xs">
+            4K ULTRA HD
+          </div>
+          <div
+            class="f3 h-[25px] w-[55px] rounded-xs bg-[#33353599] text-[12px] flex justify-center items-center text-center"
+          >
+            IMAX
+          </div>
+        </div>
+        <div>
+          <h1 class="f1 text-[96px] leading-none">INTERSTELLAR</h1>
+        </div>
+        <div class="flex f2 gap-[16px] mb-[16px] text-[17px]">
+          <p>2014</p>
+          <p>•</p>
+          <p>Sci-Fi, Adventure, Drama</p>
+          <p>•</p>
+          <div class="flex gap-[5px] text-center justify-center items-center">
+            <img class="h-[15px] width-[15px]" src="assstsT/SVG2.svg" alt="" />
+            <p>2h 49m</p>
+          </div>
+        </div>
+        <div class="flex justify-start gap-[16px] items-center">
+          <button class="rounded-[8px] btn-merah w-[181px] h-[56px] f3">
+            <i class="pr-[5px] text-[14px] text-center fa-solid fa-play"></i>
+            PLAY MOVIE
+          </button>
+          <button class="rounded-[8px] h-[56px] w-[150px] bg-[#FFFFFF1A] f3">
+            <i class="pr-[5px] text-[14px] fa-solid text-center fa-plus"></i> MY
+            LIST
+          </button>
+          <button class="rounded-[8px] h-[56px] w-[58px] bg-[#FFFFFF1A]">
+            <i class="text-[20px] text-center fa-solid fa-share-nodes"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex gap-[48px] px-[40px] pt-[48px] h-[1082px]  border-b-1 border-[#5E3F3B]">
+      <!-- sebelah sidebar kanan -->
+      <section class="flex w-[784px] flex-col  gap-[48px]">
+        <div class="flex flex-col gap-[16px]">
+          <h3 class="f2">THE STORY</h3>
+          <p class="f3">
+            When Earth becomes uninhabitable in the future, a farmer and ex-NASA
+            pilot, Joseph <br />
+            Cooper, is tasked to pilot a spacecraft, along with a team of
+            researchers, to find a new <br />
+            planet for humans. As the team travels through a wormhole in space,
+            they must face the <br />
+            unknown and the reality of time dilation, all while hoping to return
+            home to their loved ones.
+          </p>
+        </div>
+        <div class="flex flex-col gap-[24px]">
+          <div class="flex justify-between">
+            <div>
+              <h3 class="f2">TRAILER & CLIPS</h3>
+            </div>
+            <div class="f3-md text-[#E50914] text-[14px]">View all ></div>
+          </div>
+          <!-- gambar  -->
+          <div class="w-[320] h-[208] scrollbar-none overflow-x-scroll flex">
+            <div class="flex mr-[16px] flex-col gap-[16px]">
+              <div class="w-[320px] h-[180px] relative">
+                <img
+                  class="w-[320px] h-[180px] rounded-[8px]"
+                  src="assstsT/vt1.jpg"
+                  alt=""
+                />
+                <p class="f3 mnt-img">2:34</p>
+              </div>
+              <div>
+                <p class="f3-md text-[14px]">Official Trailler #1</p>
+              </div>
+            </div>
+            <div class="flex mr-[16px] flex-col gap-[16px]">
+              <div class="w-[320px] h-[180px] relative">
+                <img
+                  class="w-[320px] h-[180px] rounded-[8px]"
+                  src="assstsT/vt2.jpg"
+                  alt=""
+                />
+                <p class="f3 mnt-img">1:15</p>
+              </div>
+              <div>
+                <p class="f3-md text-[14px]">"No Time for Caution" Clip</p>
+              </div>
+            </div>
+            <div class="flex mr-[16px] flex-col gap-[16px]">
+              <div class="w-[320px] h-[180px] relative">
+                <img
+                  class="w-[320px] h-[180px] rounded-[8px]"
+                  src="assstsT/vt3.jpg"
+                  alt=""
+                />
+                <p class="f3 mnt-img">5:42</p>
+              </div>
+              <div>
+                <p class="f3-md text-[14px]">The Science of Interstellar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="w-[784px] h-[196px] flex flex-col gap-[24px]">
+          <h3 class="f2">CAST & CREW</h3>
+          <div class="flex gap-[16px]">
+            <div class="flex flex-col justify-center w-[174px] h-[144px] items-center gap-[12px]">
+              <img class="object-cover object-center size-[96px] rounded-[12px]" src="assstsT/pp1.jpg" alt="" />
+              <div class="flex flex-col items-center justify-center">
+                <h5 class="f3-md text-[14px]">Mattew McConaughey</h5>
+                <p class="f3-pnk text-[12px]">Joseph Cooper</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center w-[174px] h-[144px] items-center gap-[12px]">
+              <img class="object-cover object-center size-[96px] rounded-[12px]" src="assstsT/pp2.jpg" alt="" />
+              <div class="flex flex-col items-center justify-center">
+                <h5 class="f3-md text-[14px]">Anne Hathaway</h5>
+                <p class="f3-pnk text-[12px]">Dr. Amelia Brand</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center w-[174px] h-[144px] items-center gap-[12px]">
+              <img class="object-cover object-center size-[96px] rounded-[12px]" src="assstsT/pp3.jpg" alt="" />
+              <div class="flex flex-col items-center justify-center">
+                <h5 class="f3-md text-[14px]">Michael Caine</h5>
+                <p class="f3-pnk text-[12px]">Professor Brand</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center w-[174px] h-[144px] items-center gap-[12px]">
+              <img class="object-cover object-center size-[96px] rounded-[12px]" src="assstsT/pp4.jpg" alt="" />
+              <div class="flex flex-col items-center justify-center">
+                <h5 class="f3-md text-[14px]">Christopher Nolan</h5>
+                <p class="f3-pnk text-[12px]">Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- sidebar kanan -->
+      <aside class="flex w-[368px] flex-col gap-[32px]">
+        <div class="border-1 flex flex-col gap-[18px] border-[#5E3F3B] px-[24px] py-[24px] bg-[#1E2020] rounded-[16px]  h-[348px]">
+          <div class="flex justify-between items-center">
+            <div>
+              <h4 class="f3-pnk text-[12px] leading-none">AVERAGE RATING</h4>
+              <span class="f1-md text-[36px] leading-none">8.7</span>
+              <span class="f3-pnk text-[14px]">/10</span>
+            </div>
+            <i class="fa-solid text-[30px] text-[#FFDB3C] fa-star"></i>
+          </div>
+          <div class="flex flex-col gap-[8px]">
+            <div class="flex justify-center items-center gap-[16px]">
+              <p class="f3-pnk">5</p>
+              <div class="h-[8px] w-[286px] bg-[#333535] rounded-[12px] ">
+                <div class="h-[8px] w-[226px] bg-[#FFDB3C] rounded-l-[12px]"></div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-[16px]">
+              <p class="f3-pnk">4</p>
+              <div class="h-[8px] w-[286px] bg-[#333535] rounded-[12px] ">
+                <div class="h-[8px] w-[42px] bg-[#FFDB3C] rounded-l-[12px]"></div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-[16px]">
+              <p class="f3-pnk">3</p>
+              <div class="h-[8px] w-[286px] bg-[#333535] rounded-[12px] ">
+                <div class="h-[8px] w-[8px] bg-[#FFDB3C] rounded-l-[12px]"></div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-[16px]">
+              <p class="f3-pnk">2</p>
+              <div class="h-[8px] w-[286px] bg-[#333535] rounded-[12px] ">
+                <div class="h-[8px] w-[2.60px] bg-[#FFDB3C] rounded-l-[12px]"></div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-[16px]">
+              <p class="f3-pnk">1</p>
+              <div class="h-[8px] w-[286px] bg-[#333535] rounded-[12px] ">
+                <div class="h-[8px] w-[2.40px] bg-[#FFDB3C] rounded-l-[12px]"></div>
+              </div>
+            </div>
+          </div>
+          <button class="f3-md text-[16px] w-[318px] h-[48px] py-[12px]  rounded-[8px] bg-[#333535]">RATE THIS MOVIE</button>
+        </div>
+
+        <div class="flex justify-between border-b-1 border-[#5E3F3B] py-[12px]">
+          <p class="f3-pnk text-[14px]">Release Date</p>
+          <p class="f3-md text-[14px]">Nov 7, 2014</p>
+        </div>
+        <div class="flex justify-between border-b-1 border-[#5E3F3B] py-[12px]">
+          <p class="f3-pnk text-[14px]">Box Office</p>
+          <p class="f3-md text-[14px]">$773.9M</p>
+        </div>
+        <div class="flex justify-between border-b-1 border-[#5E3F3B] py-[12px]">
+          <p class="f3-pnk text-[14px]">Studio</p>
+          <p class="f3-md text-[14px]">Warner Bros.</p>
+        </div>
+        <div class="flex justify-between border-b-1 border-[#5E3F3B] py-[12px]">
+          <p class="f3-pnk text-[14px]">Language</p>
+          <p class="f3-md text-[14px]">English</p>
+        </div>
+        <div class="flex flex-col gap-[16px]">
+          <h3 class="f3-md text-[16px]">Recent Reviews</h3>
+          <div class="border-1 flex flex-col gap-[8px] border-[#5E3F3B] p-[16px] w-[368px] h-[120px]  bg-[#1E2020] rounded-[8px]">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-[8px] justify-center items-center">
+                <div class="rounded-[100px] size-[24px] bg-[#E50914] text-center text-[10px] f3-md flex items-center justify-center" >JD</div>
+                <p class="f3-md text-[12px]">Jhon Doe</p>
+              </div>
+              <div>
+                <p class="f3-pnk text-[10px]">2 days ago</p>
+              </div>
+            </div>
+            <p class="f3 text-[12px] italic">
+              "A visual masterpiece. The soundtrack by Hans Zimmer is hauntingly
+              beautiful. A must-watch on the biggest screen possible."
+            </p>
+          </div>
+        </div>
+      </aside>
+    </main>
+<section class="h-[525px] border-b border-[#5E3F3B] px-[40px] py-[48px]">
+  <div class="flex flex-col gap-[32px]">
+    <h3 class="f2">YOU MAY ALSO LIKE</h3>
+
+    <div class="w-full overflow-x-auto scrollbar-none overflow-y-hidden">
+      <div class="flex w-max gap-[24px]">
+
+        <div class="flex w-[202px] shrink-0 flex-col gap-[12px]">
+          <img
+            class="h-[280px] w-full object-cover object-center"
+            src="assstsT/crd1.jpg"
+            alt=""
+          />
+          <div>
+            <h5 class="f3-md text-[14px]">Inception</h5>
+            <p class="f3-pnk text-[12px]">2010 • Sci-Fi</p>
+          </div>
+        </div>
+
+        <div class="flex w-[202px] shrink-0 flex-col gap-[12px]">
+          <img
+            class="h-[280px] w-full object-cover object-center"
+            src="assstsT/crd2.jpg"
+            alt=""
+          />
+          <div>
+            <h5 class="f3-md text-[14px]">The Martian</h5>
+            <p class="f3-pnk text-[12px]">2015 • Adventure</p>
+          </div>
+        </div>
+
+        <div class="flex w-[202px] shrink-0 flex-col gap-[12px]">
+          <img
+            class="h-[280px] w-full object-cover object-center"
+            src="assstsT/crd3.jpg"
+            alt=""
+          />
+          <div>
+            <h5 class="f3-md text-[14px]">Blade Runner 2049</h5>
+            <p class="f3-pnk text-[12px]">2017 • Sci-Fi</p>
+          </div>
+        </div>
+
+        <div class="flex w-[202px] shrink-0 flex-col gap-[12px]">
+          <img
+            class="h-[280px] w-full object-cover object-center"
+            src="assstsT/crd4.jpg"
+            alt=""
+          />
+          <div>
+            <h5 class="f3-md text-[14px]">Arrival</h5>
+            <p class="f3-pnk text-[12px]">2016 • Drama</p>
+          </div>
+        </div>
+
+        <div class="flex w-[202px] shrink-0 flex-col gap-[12px]">
+          <img
+            class="h-[280px] w-full object-cover object-center"
+            src="assstsT/crd5.jpg"
+            alt=""
+          />
+          <div>
+            <h5 class="f3-md text-[14px]">Gravity</h5>
+            <p class="f3-pnk text-[12px]">2013 • Thriller</p>
+          </div>
+        </div>
+
+        <div class="flex w-[202px] shrink-0 flex-col gap-[12px]">
+          <img
+            class="h-[280px] w-full object-cover object-center"
+            src="assstsT/crd6.jpg"
+            alt=""
+          />
+          <div>
+            <h5 class="f3-md text-[14px]">2001: A Space Odyssey</h5>
+            <p class="f3-pnk text-[12px]">1968 • Sci-Fi</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+    <footer class="h-[217px] py-[48px]">
+      <div class="flex flex-col gap-[24px] justify-center items-center text-center">
+        <div class="flex justify-center items-center text-center gap-[4px]">
+          
+          <img class="w-[24px] h-[24px]" src="assstsT/Vector.svg" alt="" />
+          <h1 class="f1 text-[#FFFFFF80] text-[18px]">MOVIESTREAM</h1>
+        </div>
+        <!-- <b>MOVIESTREAM</b> -->
+        <div class="flex f3-pnk  flex-col gap-[32px]">
+          <div class="flex justify-between gap-[32px]">
+            
+          <p class="text-[14px]">Privacy Policy</p>
+          <p class="text-[14px]">Terms of Service</p>
+          <p class="text-[14px]">Support</p>
+          <p class="text-[14px]">Cookie Settings</p>
+        </div>
+        <p class="text-[12px]">© 2024 MovieStream Entertainment Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
